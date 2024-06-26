@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס הגשת פרטים</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>רישום מטפל</h2>
+        <form id="therapistForm">
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">טלפון:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="categories">תחומי טיפול:</label>
+            <div id="categories" class="checkbox-container" required>
+                <div class="scrollable-checkbox">
+                    <label><input type="checkbox" name="categories" value="דיקור סיני"> דיקור סיני</label>
+                    <label><input type="checkbox" name="categories" value="דיקור יפני"> דיקור יפני</label>
+                    <label><input type="checkbox" name="categories" value="טיפול שונישין לילדים"> טיפול שונישין לילדים</label>
+                    <label><input type="checkbox" name="categories" value="רפלקסולוגיה"> רפלקסולוגיה</label>
+                    <label><input type="checkbox" name="categories" value="שיאצו"> שיאצו</label>
+                    <label><input type="checkbox" name="categories" value="טווינא"> טווינא</label>
+                    <label><input type="checkbox" name="categories" value="אוסטאופתיה"> אוסטאופתיה</label>
+                    <label><input type="checkbox" name="categories" value="כירופרקטיקה"> כירופרקטיקה</label>
+                    <label><input type="checkbox" name="categories" value="ביופידבק"> ביופידבק</label>
+                    <label><input type="checkbox" name="categories" value="הומאופתיה"> הומאופתיה</label>
+                    <label><input type="checkbox" name="categories" value="הומוטוקסיקולוגיה"> הומוטוקסיקולוגיה</label>
+                    <label><input type="checkbox" name="categories" value="היפנוזה"> היפנוזה</label>
+                    <label><input type="checkbox" name="categories" value="נטורופתיה"> נטורופתיה</label>
+                    <label><input type="checkbox" name="categories" value="עיסוי רפואי הוליסטי"> עיסוי רפואי הוליסטי</label>
+                    <label><input type="checkbox" name="categories" value="שיטת פלדנקרייז"> שיטת פלדנקרייז</label>
+                    <label><input type="checkbox" name="categories" value="שיטת אלכסנדר"> שיטת אלכסנדר</label>
+                    <label><input type="checkbox" name="categories" value="שיטת פאולה"> שיטת פאולה</label>
+                    <label><input type="checkbox" name="categories" value="עיסוי לימפטי (ניקוז לימפטי)"> עיסוי לימפטי (ניקוז לימפטי)</label>
+                    <label><input type="checkbox" name="categories" value="תמציות פרחי באך"> תמציות פרחי באך</label>
+                    <label><input type="checkbox" name="categories" value="דיכאון"> דיכאון</label>
+                    <label><input type="checkbox" name="categories" value="טיפול פסיכולוגי"> טיפול פסיכולוגי</label>
+                    <label><input type="checkbox" name="categories" value="טיפול קוגניטיבי התנהגותי - CBT"> טיפול קוגניטיבי התנהגותי - CBT</label>
+                    <label><input type="checkbox" name="categories" value="חרדה"> חרדה</label>
+                    <label><input type="checkbox" name="categories" value="טיפול זוגי"> טיפול זוגי</label>
+                    <label><input type="checkbox" name="categories" value="הדרכת הורים"> הדרכת הורים</label>
+                    <label><input type="checkbox" name="categories" value="טיפול נפשי"> טיפול נפשי</label>
+                    <label><input type="checkbox" name="categories" value="טיפול משפחתי"> טיפול משפחתי</label>
+                    <label><input type="checkbox" name="categories" value="טיפול רגשי לילדים"> טיפול רגשי לילדים</label>
+                    <label><input type="checkbox" name="categories" value="הפרעות שינה"> הפרעות שינה</label>
+                    <label><input type="checkbox" name="categories" value="הפרעות אכילה"> הפרעות אכילה</label>
+                    <label><input type="checkbox" name="categories" value="אימון אישי - Coaching"> אימון אישי - Coaching</label>
+                    <label><input type="checkbox" name="categories" value="טיפול מיני"> טיפול מיני</label>
+                    <label><input type="checkbox" name="categories" value="פסיכותרפיה"> פסיכותרפיה</label>
+                    <label><input type="checkbox" name="categories" value="מיינדפולנס"> מיינדפולנס</label>
+                    <label><input type="checkbox" name="categories" value="התמכרויות"> התמכרויות</label>
+                    <label><input type="checkbox" name="categories" value="טיפול במתבגרים"> טיפול במתבגרים</label>
+                    <label><input type="checkbox" name="categories" value="ייעוץ זוגי"> ייעוץ זוגי</label>
+                    <label><input type="checkbox" name="categories" value="פסיכותרפיה גופנית"> פסיכותרפיה גופנית</label>
+                    <label><input type="checkbox" name="categories" value="בולמיה"> בולמיה</label>
+                    <label><input type="checkbox" name="categories" value="חרדה חברתית"> חרדה חברתית</label>
+                    <label><input type="checkbox" name="categories" value="ADD"> ADD</label>
+                    <label><input type="checkbox" name="categories" value="אנורקסיה"> אנורקסיה</label>
+                    <label><input type="checkbox" name="categories" value="טיפול במצבי משבר"> טיפול במצבי משבר</label>
+                    <label><input type="checkbox" name="categories" value="הפרעות קשב וריכוז - ADHD"> הפרעות קשב וריכוז - ADHD</label>
+                    <label><input type="checkbox" name="categories" value="העצמה אישית"> העצמה אישית</label>
+                    <label><input type="checkbox" name="categories" value="ריפוי בעיסוק"> ריפוי בעיסוק</label>
+                    <label><input type="checkbox" name="categories" value="קלינאות תקשורת"> קלינאות תקשורת</label>
+                    <label><input type="checkbox" name="categories" value="אבחון הפרעות קשב וריכוז"> אבחון הפרעות קשב וריכוז</label>
+                    <label><input type="checkbox" name="categories" value="אבחון דידקטי"> אבחון דידקטי</label>
+                    <label><input type="checkbox" name="categories" value="טיפול פסיכיאטרי"> טיפול פסיכיאטרי</label>
+                    <label><input type="checkbox" name="categories" value="טיפול רגשי בעזרת בעלי חיים"> טיפול רגשי בעזרת בעלי חיים</label>
+                    <label><input type="checkbox" name="categories" value="טיפול באומנות"> טיפול באומנות</label>
+                    <label><input type="checkbox" name="categories" value="אבחון פסיכולוגי"> אבחון פסיכולוגי</label>
+                    <label><input type="checkbox" name="categories" value="פירוש חלומות"> פירוש חלומות</label>
+                    <label><input type="checkbox" name="categories" value="טיפול בדרמה"> טיפול בדרמה</label>
+                    <label><input type="checkbox" name="categories" value="ייעוץ להורים"> ייעוץ להורים</label>
+                    <label><input type="checkbox" name="categories" value="הפרעת אישיות גבולית"> הפרעת אישיות גבולית</label>
+                    <label><input type="checkbox" name="categories" value="טיפול במוסיקה"> טיפול במוסיקה</label>
+                    <label><input type="checkbox" name="categories" value="טיפול בקשיי הגיה"> טיפול בקשיי הגיה</label>
+                    <label><input type="checkbox" name="categories" value="טיפול תומך בטיפולי פוריות"> טיפול תומך בטיפולי פוריות</label>
+                    <label><input type="checkbox" name="categories" value="משפחה"> משפחה</label>
+                    <label><input type="checkbox" name="categories" value="פוסט טראומה"> פוסט טראומה</label>
+                    <label><input type="checkbox" name="categories" value="טיפול התנהגותי דיאלקטי - DBT"> טיפול התנהגותי דיאלקטי - DBT</label>
+                    <label><input type="checkbox" name="categories" value="NLP"> NLP</label>
+                    <label><input type="checkbox" name="categories" value="טיפול ב-OCD"> טיפול ב-OCD</label>
+                    <label><input type="checkbox" name="categories" value="EMDR"> EMDR</label>
+                    <label><input type="checkbox" name="categories" value="SE - somatic experiencing"> SE - somatic experiencing</label>
+                    <label><input type="checkbox" name="categories" value="אבחון התפתחותי"> אבחון התפתחותי</label>
+                    <label><input type="checkbox" name="categories" value="אבחון נוירופסיכולוגי"> אבחון נוירופסיכולוגי</label>
+                    <label><input type="checkbox" name="categories" value="אבחון פסיכודיאגנוסטי"> אבחון פסיכודיאגנוסטי</label>
+                    <label><input type="checkbox" name="categories" value="אבחון פסיכודידקטי"> אבחון פסיכודידקטי</label>
+                    <label><input type="checkbox" name="categories" value="אבחון תעסוקתי"> אבחון תעסוקתי</label>
+
+
+            </div>
+
+            <label for="city">עיר:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="address">כתובת:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="about">אודות:</label>
+            <textarea id="about" name="about" required></textarea>
+
+
+            <label for="documents">העלה מסמכים:</label>
+            <input type="file" id="documents" name="documents" multiple>
+
+
+            <button type="submit">שלח</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
