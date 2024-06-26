@@ -1,0 +1,71 @@
+/* Basic reset and styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the main layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Section for the map */
+.map-section {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+/* Section for the therapist list */
+.list-section {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: #87CEEB; /* Sky blue background */
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Styling for therapist cards */
+.therapistCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for realism */
+  background-image: linear-gradient(white, #f0f0f0); /* Cloud-like background */
+  transition: background-color 0.3s;
+}
+
+.therapistCard:hover {
+  background-color: #dcdcdc; /* Darken on hover */
+  cursor: pointer;
+}
+
+.therapistInfo {
+  flex: 1;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.therapistLocation {
+  flex: 0 0 auto;
+  text-align: left;
+  background-color: #e0e0e0; /* Light grey background */
+  padding: 10px;
+  border-radius: 8px;
+  color: #333; /* Darker text color */
+  font-weight: bold;
+  margin-left: 10px; /* Space between info and location */
+}
+
+.therapistCard h2 {
+  margin: 0 0 10px 0;
+}
+
+.therapistCard p {
+  margin: 5px 0;
+}
